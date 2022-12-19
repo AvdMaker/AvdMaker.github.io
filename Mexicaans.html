@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<head>
+
+<!-- link naar de overeenkomende styles -->
+  <link rel="stylesheet" href="mystyle.css">
+
+<!-- naam van tabblad -->
+  <title>Mexicaans</title>
+
+<style>
+
+/* foto bij voorgerecht (gegrilde maïs) */
+.Corn img {
+  float: right;
+  width: 28%;
+  height: 10%;
+  margin-right: 180px;
+}
+
+/* foto bij hoofdgerecht (taco's met kruidige kip en wokgroente) */
+.Taco img {
+  float: left;
+  width: 35%;
+  height: 10%;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+/* foto bij nagerecht (churros met kaneel) */
+.Churros img {
+  float: right;
+  width: 28%;
+  height: 10%;
+  margin-right: 180px;
+}
+
+</style>
+</head>
+<body>
+  <header>
+
+<!-- navbar en de namen van de buttons
+(vanaf hier gekopieërd van w3schools maar aangepast zodat het bij onze website past)-->
+    <div class="navbar">
+      <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Noord-Amerika
+        <i class="fa fa-caret-down"></i>
+      </button>
+    <div class="dropdown-content">
+      <a href="Amerikaans.html">Amerikaans</a>
+      <a href="Mexicaans.html">Mexicaans</a>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Europa
+        <i class="fa fa-caret-down"></i>
+      </button>
+    <div class="dropdown-content">
+      <a href="Duits.html">Duits</a>
+      <a href="Frans.html">Frans</a>
+      <a href="Italiaans.html">Italiaans</a>
+      <a href="Nederlands.html">Nederlands</a>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Azië
+        <i class="fa fa-caret-down"></i>
+      </button>
+    <div class="dropdown-content">
+      <a href="Indonesisch.html">Indonesisch</a>
+      <a href="Japans.html">Japans</a>
+    </div>
+    </div>
+      <a href="Vegan.html">Vegan</a>
+      <a href="Over ons.html">Over ons</a>
+<!-- tot hier gekopieërd van w3schools -->
+
+<!-- het logo rechts bovenin de navbar -->
+    <div class="logo">
+      <img src="AATW.JPEG">
+    </div>
+    </div>
+
+<!-- border on Mexicaans -->
+    <div class="border"><h1>Mexicaans</h1></div>
+
+<!-- kleine navs in de pagina zelf -->
+    <nav class="vhn" style="text-align:center">
+    <nav class="vhn" style="margin:40px;">
+      <a href="#voorgerecht">Voorgerecht</a>
+      <a href="#hoofdgerecht">Hoofdgerecht</a>
+      <a href="#nagerecht">Nagerecht</a>
+    </nav>
+
+<!-- welk gerecht het is (voor, hoofd of na) -->
+    <h2 id="voorgerecht">Voorgerecht</h2>
+
+<!-- het gerecht -->
+    <h4><i>Gegrilde maïs (4 porties)</i></h4>
+
+<!-- Photo by <a href="https://unsplash.com/@jim_4140so?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jim Sosengphet</a> on
+<a href="https://unsplash.com/s/photos/chicken-wings?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+    <div class="Corn">
+      <img src="Corn.jpg">
+    </div>
+
+<!-- tabel met ingrediënten en benodigdheden -->
+    <div class="first">
+      <table>
+        <tr>
+          <td><b>Ingrediënten</b></td>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>4 maïskolven</li>
+              <li>150 gram feta</li>
+              <li>2 limoenen</li>
+              <li>100 ml mayonaise</li>
+              <li>2 theelepels chilipoeder</li>
+              <li>Halve theelepel grof zout</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td><b>Benodigdheden</b></td>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Grillpan</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+<!-- woord 'bereidingswijze' met border -->
+    <div class="BW"><h3><b>Bereidingswijze</b></h3></div>
+
+<!-- lijst met bereidingswijze -->
+    <div class="Bereiding">
+      <ul class="center">
+        <li>Kook 10 minuten de maïs, giet het vervolgens af.</li>
+        <li>Tijdens het koken van de maïs verhit je de grillpan zonder olie of boter.</li>
+        <li>Gril de maïskolven in 6-8 minuten goudbruin. Vergeet ze niet regelmatig om te draaien.</li>
+        <li>Tussen het grillen van de maïskolven, verkruimel je de feta en verdeel het over een bord. </li>
+        <li>Ook halveer je de limoenen.</li>
+        <li>Wrijf elke kolf in met een limoen helft.</li>
+        <li>Besmeer vervolgens de maïskolven met mayonaise en rol ze door de verkruimelde feta.</li>
+        <li>In de laatste stap bestrooi je de maïs kolven met chilipoeder en zout.</li>
+        <li>(Optioneel) Serveer de maïskolven met de limoen helften apart erbij.</li>
+          <br/><br/><br/>
+      </ul>
+    </div>
+
+<!-- kleine navs in de pagina zelf -->
+    <nav class="vhn" style="text-align:center">
+    <nav class="vhn" style="margin:40px;">
+      <a href="#voorgerecht">Voorgerecht</a>
+      <a href="#nagerecht">Nagerecht</a>
+    </nav>
+
+<!-- welk gerecht het is (voor, hoofd of na) -->
+    <h2 id="hoofdgerecht">Hoofdgerecht</h2>
+
+<!-- het gerecht -->
+    <h4><i>Taco's met kruidige kip en wokgroente (4 personen)</i></h4>
+
+<!-- Photo by <a href="https://unsplash.com/@jarritos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jarritos Mexican Soda</a> on
+<a href="https://unsplash.com/s/photos/tacos-with-chicken?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+    <div class="Taco">
+      <img src="Taco.jpg">
+    </div>
+
+<!-- tabel met ingrediënten en benodigdheden -->
+    <div class="second">
+      <table>
+        <tr>
+          <td><b>Ingrediënten</b></td>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>3 kipfilets in kleine blokjes gesneden</li>
+              <li>400 gram wokgroente</li>
+              <li>1 rode ui gesnipperd</li>
+              <li>3 teentjes knoflook fijngehakt</li>
+              <li>1 trostomaat in kleine blokjes gesneden</li>
+              <li>1 zakje Santa maria chicken taco kruidenpasta</li>
+              <li>75 gram geraspte cheddar</li>
+              <li>Taco’s (ongeveer 10)</li>
+              <li>Peper en zout (vers gemalen)</li>
+              <li>Zonnebloemolie</li>
+              <li>Peterselie</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td><b>Benodigdheden</b></td>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Wokpan/hapjespan</li>
+              <li>Ovenschaal</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+<!-- woord 'bereidingswijze' met border -->
+    <div class="BW"><h3><b>Bereidingswijze</b></h3></div>
+
+<!-- lijst met bereidingswijze -->
+    <div class="Bereiding">
+      <ul class="center">
+        <li>Verwarm de oven op 180 graden hetelucht. </li>
+        <li>Ondertussen verwarm je een scheutje olie in een wok of hapjespan.</li>
+        <li>Doe de uien met de tomaat, knoflook en een snufje peper en zout in de wokpan en bak het ongeveer 3 minuten.</li>
+        <li>Voeg de klein gesneden stukjes kip toe en bak tot de kip gaar is.</li>
+        <li>Vervolgens voeg je de zak wokgroente toe en deze kort mee.</li>
+        <li>Dan voeg je het zakje kruidenpasta toe en verwarm het even kort mee.</li>
+        <li>Daarna vul je de taco’s met de kip-groente vulling.</li>
+        <li>Zet de taco’s in een ovenschaal en bestrooi ze met geraspte cheddar.</li>
+        <li>Doe ze in de oven voor ongeveer 15 minuten.</li>
+        <li>(Optioneel) Ondertussen maak je een mexicaanse dip en/of guacamole klaar.</li>
+        <li>Als de taco’s klaar zijn kun je ze eventueel nog bestrooien met peterselie.</li>
+          <br/><br/>
+      </ul>
+    </div>
+
+<!-- kleine navs in de pagina zelf -->
+    <nav>
+      <a href="#voorgerecht">Voorgerecht</a>
+      <a href="#hoofdgerecht">Hoofdgerecht</a>
+    </nav>
+
+<!-- welk gerecht het is (voor, hoofd of na) -->
+    <h2 id="nagerecht">Nagerecht</h2>
+
+<!-- het gerecht -->
+    <h4><i>Churros met kaneel (6 personen)</i></h4>
+
+<!-- Photo by <a href="https://unsplash.com/@kittinskie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tina Guina</a> on
+<a href="https://unsplash.com/s/photos/cheesecake?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
+    <div class="Churros">
+      <img src="Churros.jpg">
+    </div>
+
+<!-- tabel met ingrediënten en benodigdheden -->
+    <div class="first">
+      <table>
+        <tr>
+          <td><b>Ingrediënten</b></td>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>25 gram kristalsuiker</li>
+              <li>50 gram ongezouten roomboter</li>
+              <li>Halve theelepel zout</li>
+              <li>150 ml kraanwater</li>
+              <li>125 gram tarwebloem</li>
+              <li>2 middelgrote eieren</li>
+              <li>1 theelepel gemalen kaneel</li>
+              <li>1 L zonnebloemolie</li>
+              <li>1 eetlepel poedersuiker</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td><b>Benodigdheden</b></td>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Steelpan</li>
+              <li>Wokpan</li>
+              <li>Spuitzak met gekartelde spuidmond <br/> van ongeveer van 1 cm</li>
+              <li>Schuimpaan</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+<!-- woord 'bereidingswijze' met border -->
+    <div class="BW"><h3><b>Bereidingswijze</b></h3></div>
+
+<!-- lijst met bereidingswijze -->
+    <div class="Bereiding">
+      <ul class="center">
+        <li>Doe de kristalsuiker, boter, het zout en water in een steelpan en verhit op laag vuur tot de boter gesmolten is.</li>
+        <li>Vervolgens voeg je in één keer de bloem toe en roer tot het deeg loslaat van de pan en het een bal vormt.</li>
+        <li>Neem het deeg van het vuur.</li>
+        <li>Klop de eieren los en roer het in 3 delen door het deeg tot je een glad, maar stevig beslag hebt.</li>
+        <li>Meng ondertussen het kaneel erdoorheen.</li>
+        <li>Laat het dan 10 minuten afkoelen. </li>
+        <li>Tijdens het afkoelen verhit je de olie in een wokpan tot 180 °C.</li>
+        <li>Controleer of de olie heet genoeg is door er wat beslag aan toe te voegen. Als het binnen 15 seconden goudbruin is dan is de olie heet genoeg.</li>
+        <li>Doe vervolgens de helft van het beslag in de spuitzak en spuit het deeg in de hete olie.</li>
+        <li>Zorg ervoor dat de spuitzak en het spuitmond de hete olie niet raken.</li>
+        <li>Knip met een schaar om de 10 cm (naar eigen keuze) een stuk deeg af. </li>
+        <li>Bak het beslag in 4 tot 5 minuten goudbruin. </li>
+        <li>Als ze goudbruin zijn schep je ze met de schuimspaan uit de olie en laat het uitlekken op keukenpapier.</li>
+        <li>(Optioneel) Bestrooi de churros met poedersuiker.</li>
+        <li>Bak de rest van het beslag op dezelfde manier als hierboven beschreven.</li>
+          <br/><br/>
+      </ul>
+    </div>
+
+</body>
+</header>

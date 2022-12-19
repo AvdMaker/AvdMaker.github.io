@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<head>
+
+  <!-- naam van tabblad -->
+    <title>Over ons</title>
+
+<style>
+
+/* font family voor de titel van de pagina */
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* achtergrondkleur van de pagina */
+  body {
+    background-color: #EBDECF;
+  }
+
+/* logo rechts in de navbar (eigen foto), van w3schools vanaf hier */
+  .logo{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    float: right;
+    overflow: hidden;
+    margin: 12px;
+  }
+
+/* logo in de navbar zelf */
+  .navbar img{
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+/* Navbar container */
+  .navbar {
+    overflow: hidden;
+    background-color: rgba(0,0,0,0);
+    font-family: Arial;
+    margin: -8px;
+  }
+
+/* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 30px 16px;
+    text-decoration: none;
+  }
+
+/* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+/* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 30px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+/* Add a red background color to navbar links on hover (achtergrondkleur veranderd) */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(215,202,187,1);
+  }
+
+/* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(215,202,187,1);
+    min-width: 139px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+  }
+
+/* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 15px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+/* Add a grey background color to dropdown links on hover (achtergrondkleur veranderd) */
+  .dropdown-content a:hover {
+    background-color: rgba(195,182,167,1);
+  }
+
+/* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+/* tot hier van w3schools maar zelf aangepast zodat het past bij onze website */
+
+/* border om de titel van de pagina */
+  .border {
+    border-style: solid;
+    border-top: rgba(0,0,0,0);
+    border-left: rgba(0,0,0,0);
+    border-right: rgba(0,0,0,0);
+    width: 1400px;
+    height: 100px;
+    color: black;
+    margin: auto;
+    padding-bottom: 60px;
+  }
+
+/* tekst in border waarin de titel van de pagina staat */
+  .border h1{
+    color: black;
+    text-align: center;
+    margin: 20px;
+    font-size: 120px;
+    font-family: 'Dancing Script';
+  }
+
+/* tekst waarin we een stukje over ons zelf vertellen */
+  article {
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+/* tekst 'hoe leuk' */
+  p {
+    color: black;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    margin-top: 80px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+/* over de buttons */
+  .button {
+    background-color: rgba(200,0,0,0.8);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+/* alleen over button 'heel leuk' */
+  .button1 {
+    margin-left: 800px;
+  }
+
+/* overgangskleur button hover */
+  .button:hover {
+    background-color: rgba(200,0,0,0.6);
+    transition: 0.2s;
+  }
+
+/* pierson video */
+  video {
+    width: 500px;
+    height: 290px;
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 120px;
+  }
+
+/* bronnenlijst */
+  h2 {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+/* tekst onder 'bronnenlijst' */
+  h3 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+/* div van bronnenlijst */
+  .bld {
+    text-align: center;
+  }
+
+/* lijst van de bronnenlijst */
+  ul.blu {
+    display: inline-block;
+    text-align: left;
+  }
+
+/* lijst van links */
+  li {
+    font-size: 18px;
+  }
+
+/* link waar nog niet op geklikt is */
+  a.ln:link {
+    color: black;
+  }
+
+/* link waar al op geklikt is */
+  a.ln:visited {
+    color: black;
+  }
+
+/* met muis over de link */
+  a.ln:hover {
+    color: rgba(160,160,160,0.8);
+  }
+
+/* klikken op de link */
+  a.ln:active {
+    color: blue;
+  }
+
+</style>
+</head>
+<body>
+  <header>
+
+<!-- navbar en de namen van de buttons
+(vanaf hier  van w3schools maar aangepast zodat het bij onze website past)-->
+    <div class="navbar">
+      <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Noord-Amerika
+        <i class="fa fa-caret-down"></i>
+      </button>
+    <div class="dropdown-content">
+      <a href="Amerikaans.html">Amerikaans</a>
+      <a href="Mexicaans.html">Mexicaans</a>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Europa
+        <i class="fa fa-caret-down"></i>
+      </button>
+    <div class="dropdown-content">
+      <a href="Duits.html">Duits</a>
+      <a href="Frans.html">Frans</a>
+      <a href="Italiaans.html">Italiaans</a>
+      <a href="Nederlands.html">Nederlands</a>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Azië
+        <i class="fa fa-caret-down"></i>
+      </button>
+    <div class="dropdown-content">
+      <a href="Indonesisch.html">Indonesisch</a>
+      <a href="Japans.html">Japans</a>
+    </div>
+    </div>
+      <a href="Vegan.html">Vegan</a>
+      <a href="Over ons.html">Over ons</a>
+<!-- tot hier van w3schools -->
+
+<!-- het logo rechts bovenin de navbar -->
+    <div class="logo">
+      <img src="AATW.JPEG">
+    </div>
+    </div>
+
+<!-- border on Over ons -->
+    <div class="border"><h1>Over ons</h1></div>
+
+<!-- bovenste tekst waarin staat wie wij zijn en hoe we op deze website zijn gekomen -->
+    <article>
+      Wij zijn Anna en Jada. Beide zitten we in vwo 5 op het ds. Pierson College in Den Bosch. <br/>
+      Voor het vak Informatica hebben wij de opdracht gekregen om te gaan proeven hoe html werkt en alles wat daar nog meer bij komt kijken. <br/>
+      Maar welk onderwerp moet je dan gaan doen?
+      Na lang erover nagedacht te hebben, zijn we gekomen op recepten. <br/>
+      Het is natuurlijk een beetje saai als je met alleen maar simpele gerechten aankomt, vandaar dat wij dachten hoe leuk is het als we er continenten bij betrekken. <br/>
+      Uit bijna ieder continent kiezen we een aantal landen waar we een voorgerecht, hoofdgerecht en nagerecht voor hebben uitgekozen. <br/>
+      Natuurlijk zijn wij nog jong en hebben wij nog niet zoveel ervaring met koken. Vandaar hebben we hulp gehad van andere website die u hieronder zal vinden in een lijst.
+    </article>
+
+<!-- tekst boven aboneerknop -->
+    <p>
+      Hopelijk heeft u in ieder geval iets gehad aan een van onze recepten! <br/><br/>
+      <b>Hoe leuk vond u het?</b>
+    </p>
+
+<!-- aboneer knop -->
+      <button type="button" class="button button1" onclick="alert('Wat leuk dat je hierop hebt gestemd, we nemen dit mee in onze feedback. Dankuwel!')">Heel leuk</button>
+
+<!-- aboneer knop -->
+      <button type="button" class="button button2" onclick="alert('Je bent onze grootste fan, leuk dat u een kijkje op onze website heeft genomen. Dankuwel!')">Fantastisch!</button>
+
+<!-- pierson video (naam in css="video") -->
+    <video controls>
+      <source src="Video.mp4" type="video/mp4">
+      <source src="Video.ogg" type="video/ogg">
+      Sorry, your browser does not support the video tag.
+    </video>
+
+<!-- tekst onder video -->
+    <article>
+      Wij komen uit Nederland en weten dus per land niet precies welk gerecht daar het meest gegeten wordt.
+      De gerechten hebben we opgezocht op het internet en we weten dus niet zeker of dit wel een gerecht is wat veel gegeten wordt in het land.
+      Dat gezegd, we hebben de recepten van het internet en deze hebben we zelf niet uitgeprobeerd.
+      We kunnen dus niet met zekerheid zeggen of de recepten kloppen.
+    </article>
+
+<!-- bronnenlijst met links naar nieuw tabblad -->
+    <h2>Bronnenlijst</h2>
+    <h3>We hebben de recepten onder andere van deze sites</h3>
+    <div class="bld">
+      <ul class="blu">
+        <li><a class="ln" href="https://www.ah.nl/allerhande" target="_blank">Allerhande</a></li>
+        <li><a class="ln" href="https://familieoverdekook.nl/category/food/recepten/" target="_blank">Familie over de kook</a></li>
+        <li><a class="ln" href="https://www.leukerecepten.nl/recepten-index/" target="_blank">Leuke recepten</a></li>
+        <li><a class="ln" href="https://www.solo.be/nl/recipe-search-results#recipe-search_e=0&recipe-search_q=" target="_blank">Solo</a></li>
+        <li><a class="ln" href="https://uitdekeukenvan8.nl/recepten/" target="_blank">Uit de keuken van 8</a></li>
+        <li><a class="ln" href="https://miljuschka.nl/recepten/" target="_blank">Miljuschka</a></li>
+        <li><a class="ln" href="https://www.lekkerensimpel.com/recepten/" target="_blank">Lekker en simpel</a></li>
+        <li><a class="ln" href="https://rutgerbakt.nl/alle-recepten/" target="_blank">Rutger bakt</a></li>
+        <li><a class="ln" href="https://www.culy.nl/recepten/" target="_blank">Culy</a></li>
+        <li><a class="ln" href="https://www.24kitchen.nl/recepten" target="_blank">24kitchen</a></li>
+        <li><a class="ln" href="https://www.eefkooktzo.nl/recepten/" target="_blank">Eef kookt zo</a></li>
+        <li><a class="ln" href="https://www.zoeteuurtjes.nl/" target="_blank">Zoete uurtjes</a></li>
+      </ul>
+    </div>
+      <br/><br/><br/><br/>
+
+
+</header>
+</body>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<head>
+
+<!-- naam van tabblad -->
+  <title>Home</title>
+
+<style>
+
+/* achtergrondfoto op hoofdpagina */
+/* Photo by <a href="https://unsplash.com/@nordwood?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">NordWood Themes</a> on
+<a href="https://unsplash.com/s/photos/ingredients?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+  body {
+    background: url("B.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+  }
+
+/* logo rechts in de navbar (eigen foto), van w3schools vanaf hier */
+  .logo{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    float: right;
+    overflow: hidden;
+    margin: 12px;
+  }
+
+/* logo in de navbar zelf */
+  .navbar img{
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+/* Navbar container */
+  .navbar {
+    overflow: hidden;
+    background-color: rgba(0,0,0,0);
+    font-family: Arial;
+    margin: -8px;
+
+  }
+
+/* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 30px 16px;
+    text-decoration: none;
+  }
+
+/* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+/* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 30px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+/* Add a red background color to navbar links on hover (achtergondkleur veranderd) */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(50,50,50,0.8);
+  }
+
+/* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(50,50,50,0.8);
+    min-width: 139px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+/* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 15px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+/* Add a grey background color to dropdown links on hover (achtergrondkleur veranderd) */
+  .dropdown-content a:hover {
+    background-color: rgba(64,64,64,0.6);
+  }
+
+/* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+/* tot hier van w3schools maar zelf aangepast zodat het past bij onze website */
+
+/* border om 'welkom bij all around the world' */
+  .border h1 {
+    color: rgba(255,255,255,1);
+    font-size: 80px;
+  }
+
+/* border zelf */
+  .border {
+    border-style: solid;
+    border-top: rgba(0,0,0,0);
+    border-left: rgba(0,0,0,0);
+    border-right: rgba(0,0,0,0);
+    width: 800px;
+    height: 200px;
+    color: white;
+    margin-left: 150px;
+    margin-top: 200px;
+  }
+
+/* tabel waar de tekst on de titel instaat */
+  table, td, tr {
+    border:1px solid rgba(0,0,0,0);
+    border-collapse: collapse;
+    background-color: rgba(255,255,255,0.4);
+    width:53%;
+    height: 50px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 150px;
+    margin-top: 40px;
+  }
+
+</style>
+</head>
+<body>
+  <header>
+
+
+    <div class="navbar">
+      <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Noord-Amerika
+        <i class="fa fa-caret-down"></i>
+      </button>
+    <div class="dropdown-content">
+      <a href="Amerikaans.html">Amerikaans</a>
+      <a href="Mexicaans.html">Mexicaans</a>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Europa
+        <i class="fa fa-caret-down"></i>
+      </button>
+    <div class="dropdown-content">
+      <a href="Duits.html">Duits</a>
+      <a href="Frans.html">Frans</a>
+      <a href="Italiaans.html">Italiaans</a>
+      <a href="Nederlands.html">Nederlands</a>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Azië
+        <i class="fa fa-caret-down"></i>
+      </button>
+    <div class="dropdown-content">
+      <a href="Indonesisch.html">Indonesisch</a>
+      <a href="Japans.html">Japans</a>
+    </div>
+    </div>
+      <a href="Vegan.html">Vegan</a>
+      <a href="Over ons.html">Over ons</a>
+<!-- tot hier gekopieërd van w3schools -->
+
+<!-- het logo rechts bovenin de navbar -->
+    <div class="logo">
+      <img src="AATW.JPEG">
+    </div>
+    </div>
+    <br/>
+
+<!-- hoe de browser heet -->
+    <title>Home</title>
+
+<!-- border on All Around The World -->
+  <div class="border"><h1>Welkom bij <br/> All Around The World</h1></div>
+
+<!-- tabel met tekst -->
+  <table>
+    <tr>
+     <td>Recepten heb je nooit genoeg. Neem een kijkje op onze website voor typische recepten van verschillende landen.<br/>
+       Weet dat dit ideeën zijn voor het maken van een gerecht, u zal dus altijd zelf nog iets toe kunnen voegen of er juist uit laten.<br/>
+       Ook hier is het zo dat je het veel moet doen om er goed in te worden, de eerste keer zal misschien niet perfect zijn. <br/>Dus probeer het vooral nog een keertje.</td>
+    </tr>
+  </table>
+
+</header>
+</body>
